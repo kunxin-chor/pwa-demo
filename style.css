@@ -46,3 +46,11 @@ blockquote {
   font-size:32px;
   font-style:italic;
 }
+
+#notification {
+    display:none;
+}
+
+#notification.show {
+    display:block;
+}
