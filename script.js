@@ -116,6 +116,14 @@ pageThreeBtn.addEventListener('click', async function(){
       page3.classList.add('show');
         page3.classList.remove('hidden');
    }, 100)
-
-
 })
+
+// register the srvice worker
+window.onload = () => {
+  'use strict';
+
+  if ('serviceWorker' in navigator) {
+    console.log("registering the service worker");
+    navigator.serviceWorker.register('./sw.js')
+  }
+}
