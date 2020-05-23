@@ -1,0 +1,48 @@
+#page3-btn {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+    height:100vh;
+    padding:0.5;
+}
+
+#container {
+  position: relative;
+  min-height: calc(100vh - 52px);
+  background-color:aliceblue;
+  padding:0.5;
+  margin: 0;
+}
+
+.hidden {
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-out;
+  height:0;
+}
+
+.page {
+  position: absolute;
+  width:100%;
+  will-change: transform;
+  padding-left:1em;
+}
+
+.show {
+  transform: translateX(0);
+  transition: transform 0.25s ease-out;
+  height: auto;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+blockquote {
+  padding: 2em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:32px;
+  font-style:italic;
+}
