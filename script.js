@@ -42,14 +42,21 @@ function hideAllPages() {
 
 async function showPageOne()
 {
+  // hide all the pages
   hideAllPages();
+
+  // fetch html file from online
   let response = await axios.get('page-one.html');
+
+  // set the html content of page1
   page1.innerHTML = response.data;
   page1.style.display="block";
+
+  // trigger animation after 100ms
   setTimeout(function(){
       page1.classList.add('show');
       page1.classList.remove('hidden');
-  });
+  }, 100);
 
 }
 
@@ -86,6 +93,7 @@ pageTwoBtn.addEventListener('click', async function(){
     contentDiv.appendChild(entryElement);
 
   }
+  
   page2.style.display="block";
   setTimeout(function(){
     page2.classList.add('show');
