@@ -1,17 +1,16 @@
 let cacheName = 'wad-day-7-7';
 // let caches;
 let filesToCache = [
-  '/',
-  '/kafka.jpg',
-  '/logo.jpg',
-  '/mona-lisa.jpg',
-  '/pikachu.png',
-  '/page-one.html',
-  '/init-nav.js',
-  '/starry.jpg',
-  '/style.css',
-  '/script.js',
-  '/data.json'
+  'kafka.jpg',
+  'logo.jpg',
+  'mona-lisa.jpg',
+  'pikachu.png',
+  'page-one.html',
+  'init-nav.js',
+  'starry.jpg',
+  'style.css',
+  'script.js',
+  'data.json'
 ]
 
 /* 
