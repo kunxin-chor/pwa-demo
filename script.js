@@ -9,21 +9,18 @@ let page2 = document.querySelector("#page-two");
 let page3 = document.querySelector("#page-three");
 
 page1.addEventListener('transitionend', function(){
-    console.log(this.classList);
     if (this.classList.contains('hidden')) {
         this.style.display="none";
     }
 });
 
 page2.addEventListener('transitionend', function(){
-    console.log(this.classList);
     if (this.classList.contains('hidden')) {
         this.style.display="none";
     }
 });
 
 page3.addEventListener('transitionend', function(){
-    console.log(this.classList);
     if (this.classList.contains('hidden')) {
         this.style.display="none";
     }
