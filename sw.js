@@ -1,4 +1,4 @@
-let cacheName = 'wad-day-7-7';
+let cacheName = 'wad-day-7-16';
 // let caches;
 let filesToCache = [
   'kafka.jpg',
@@ -10,7 +10,8 @@ let filesToCache = [
   'starry.jpg',
   'style.css',
   'script.js',
-  'data.json'
+  'data.json',
+  'manifest.json'
 ]
 
 /* 
@@ -38,6 +39,7 @@ self.addEventListener('fetch', function(e){
     caches.match(e.request,{
         cacheName: cacheName
     }).then(function(response){
+        console.log(response);
         console.log("Fetching "+e.request.url);
       return response || fetch (e.request)
     })
