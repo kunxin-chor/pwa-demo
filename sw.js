@@ -1,4 +1,4 @@
-let cacheName = 'wad-day-7-16';
+let cacheName = 'wad-day-7-01';
 // let caches;
 let filesToCache = [
   'kafka.jpg',
